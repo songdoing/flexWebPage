@@ -1,12 +1,14 @@
 .header {
     display : flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     height: 80px;
     padding : 0 1rem;
 }
 
 .search-form {
+    margin-left : auto;
+    margin-right : 3rem;
     width : 350px;
     max-width: 50%;
 }
@@ -23,4 +25,42 @@
 .footer {
     padding : 1rem;
     text-align: center;
+}
+.modal {
+    display : none;
+    top : 80px;
+}
+/*:checked된 상태에서 ~은 형제 태그
+            그 중 .test를 택함(여러개이면 다)
+            +는 형제태그 중 바로 다음에 나온 하나
+*/
+#modal-switch:checked ~ .modal {
+    display : flex;
+}
+label[for="modal-switch"] {
+    display :flex;
+    align-items :center;
+    justify-content: center;
+    position: absolute;
+    top : 1.3rem;
+    right : 1rem;
+    width: 40px;
+    height : 40px;
+    cursor: pointer;
+}
+label[for="modal-switch"]:before {
+    content :"❤";
+    font-size : 2rem;
+    cursor: pointer;
+}
+#modal-switch:checked ~ label[for="modal-switch"]:before {
+    color : palevioletred;
+}
+#modal-switch,
+label[for="modal-switch"] span {
+    overflow : hidden;
+    position : absolute;
+    width : 1px;
+    height : 1px;
+    opacity :0;
 }
