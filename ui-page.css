@@ -24,6 +24,7 @@
 }
 .footer {
     padding : 1rem;
+    border-top : 1px solid lightgray;
     text-align: center;
 }
 .modal {
@@ -63,4 +64,44 @@ label[for="modal-switch"] span {
     width : 1px;
     height : 1px;
     opacity :0;
+}
+
+@media (min-width : 1024px) {
+    .page {
+        display : flex;
+        flex-wrap: wrap; /*알아서 밑으로 떨어지기*/
+    }
+    .header {
+        width : 100%;        
+    }
+    .menu {
+        width: 100%;
+    }    
+    .second {
+        width: 20%;
+    }
+    .second-left {
+        order :1;
+    }
+    .second-right {
+        order :3;
+    }
+
+    .primary {
+        width: 60%;
+        order :2;
+    }
+    .footer {
+        order :4;
+        width: 100%;
+    }
+}
+
+@media (min-width :1400px) {
+    .primary {
+        width : calc(100% - 600px);
+    }
+    .second {
+        width : 300px;        
+    }
 }
