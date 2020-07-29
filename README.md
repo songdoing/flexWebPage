@@ -9,7 +9,7 @@ This project is to practice an interactive web page and is made of only CSS Flex
 * CSS
 
 ## Sample
-
+https://songdoing.github.io/flexWebPage/
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/48890162/88753212-ae846d00-d129-11ea-9d66-85c6c0df4630.png">
 <img src="https://user-images.githubusercontent.com/48890162/88753214-afb59a00-d129-11ea-87bc-7b2173ad6779.png">
